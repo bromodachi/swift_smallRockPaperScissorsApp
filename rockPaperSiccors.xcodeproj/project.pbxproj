@@ -13,6 +13,8 @@
 		33B360891B97F6DB00B0167E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33B360881B97F6DB00B0167E /* Images.xcassets */; };
 		33B3608C1B97F6DB00B0167E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33B3608A1B97F6DB00B0167E /* LaunchScreen.xib */; };
 		33B360981B97F6DC00B0167E /* rockPaperSiccorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B360971B97F6DC00B0167E /* rockPaperSiccorsTests.swift */; };
+		33B360A21B97FBCE00B0167E /* getResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B360A11B97FBCE00B0167E /* getResults.swift */; };
+		33B360A41B980F4600B0167E /* getResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B360A31B980F4600B0167E /* getResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		33B360911B97F6DC00B0167E /* rockPaperSiccorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rockPaperSiccorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33B360961B97F6DC00B0167E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33B360971B97F6DC00B0167E /* rockPaperSiccorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rockPaperSiccorsTests.swift; sourceTree = "<group>"; };
+		33B360A11B97FBCE00B0167E /* getResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getResults.swift; sourceTree = "<group>"; };
+		33B360A31B980F4600B0167E /* getResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 				33B360811B97F6DB00B0167E /* AppDelegate.swift */,
 				33B360831B97F6DB00B0167E /* ViewController.swift */,
 				33B360851B97F6DB00B0167E /* Main.storyboard */,
+				33B360A11B97FBCE00B0167E /* getResults.swift */,
+				33B360A31B980F4600B0167E /* getResult.swift */,
 				33B360881B97F6DB00B0167E /* Images.xcassets */,
 				33B3608A1B97F6DB00B0167E /* LaunchScreen.xib */,
 				33B3607F1B97F6DB00B0167E /* Supporting Files */,
@@ -213,7 +219,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				33B360841B97F6DB00B0167E /* ViewController.swift in Sources */,
+				33B360A41B980F4600B0167E /* getResult.swift in Sources */,
 				33B360821B97F6DB00B0167E /* AppDelegate.swift in Sources */,
+				33B360A21B97FBCE00B0167E /* getResults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
