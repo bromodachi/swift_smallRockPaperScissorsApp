@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>115411AC-82DD-48C0-B2AE-ED96757DBFE9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>rockPaperSiccors</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BB0B2B69396DA0D8D397CF46DB28C2F15D1FCC2B</key>
+		<string>https://github.com/bromodachi/swift_smallRockPaperScissorsApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>rockPaperSiccors.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BB0B2B69396DA0D8D397CF46DB28C2F15D1FCC2B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/bromodachi/swift_smallRockPaperScissorsApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BB0B2B69396DA0D8D397CF46DB28C2F15D1FCC2B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BB0B2B69396DA0D8D397CF46DB28C2F15D1FCC2B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>rockPaperSiccors</string>
+		</dict>
+	</array>
+</dict>
+</plist>

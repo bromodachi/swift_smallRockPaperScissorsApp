@@ -21,6 +21,8 @@ class GetResult: UIViewController {
         self.winScreen.image = getImage(match)
         
         self.winLabel.text  = getMessage(match)
+        self.navigationItem.leftBarButtonItem =
+            UIBarButtonItem(title: "Play again", style: .Plain, target: self, action: "playAgain")
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -64,8 +66,14 @@ class GetResult: UIViewController {
     /**
     *    dismiss this view controller
     */
-    @IBAction func dismiss() {
+   /* @IBAction func dismiss() {
         self.dismissViewControllerAnimated(true, completion: nil)
+    }*/
+    
+    func playAgain (){
+        if let navigationController = self.navigationController {
+            navigationController.popToRootViewControllerAnimated(true)
+        }
     }
     
 }

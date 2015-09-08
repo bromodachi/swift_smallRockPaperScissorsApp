@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33218B631B9D94C300356BD3 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33218B621B9D94C300356BD3 /* HistoryViewController.swift */; };
+		336F150C1B9D7B6100375356 /* RPSMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336F150B1B9D7B6100375356 /* RPSMatch.swift */; };
+		336F150E1B9D817800375356 /* GetResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336F150D1B9D817800375356 /* GetResult.swift */; };
 		33B360821B97F6DB00B0167E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B360811B97F6DB00B0167E /* AppDelegate.swift */; };
 		33B360841B97F6DB00B0167E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B360831B97F6DB00B0167E /* ViewController.swift */; };
 		33B360871B97F6DB00B0167E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33B360851B97F6DB00B0167E /* Main.storyboard */; };
 		33B360891B97F6DB00B0167E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33B360881B97F6DB00B0167E /* Images.xcassets */; };
 		33B3608C1B97F6DB00B0167E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33B3608A1B97F6DB00B0167E /* LaunchScreen.xib */; };
 		33B360981B97F6DC00B0167E /* rockPaperSiccorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B360971B97F6DC00B0167E /* rockPaperSiccorsTests.swift */; };
-		33B360A21B97FBCE00B0167E /* getResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B360A11B97FBCE00B0167E /* getResults.swift */; };
-		33B360A41B980F4600B0167E /* getResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B360A31B980F4600B0167E /* getResult.swift */; };
+		33B360A41B980F4600B0167E /* RPSChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B360A31B980F4600B0167E /* RPSChoice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		33218B621B9D94C300356BD3 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		336F150B1B9D7B6100375356 /* RPSMatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPSMatch.swift; sourceTree = "<group>"; };
+		336F150D1B9D817800375356 /* GetResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetResult.swift; sourceTree = "<group>"; };
 		33B3607C1B97F6DB00B0167E /* rockPaperSiccors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rockPaperSiccors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33B360801B97F6DB00B0167E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33B360811B97F6DB00B0167E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,8 +43,7 @@
 		33B360911B97F6DC00B0167E /* rockPaperSiccorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rockPaperSiccorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33B360961B97F6DC00B0167E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33B360971B97F6DC00B0167E /* rockPaperSiccorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rockPaperSiccorsTests.swift; sourceTree = "<group>"; };
-		33B360A11B97FBCE00B0167E /* getResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getResults.swift; sourceTree = "<group>"; };
-		33B360A31B980F4600B0167E /* getResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getResult.swift; sourceTree = "<group>"; };
+		33B360A31B980F4600B0167E /* RPSChoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPSChoice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,13 +86,15 @@
 			isa = PBXGroup;
 			children = (
 				33B360811B97F6DB00B0167E /* AppDelegate.swift */,
+				336F150B1B9D7B6100375356 /* RPSMatch.swift */,
 				33B360831B97F6DB00B0167E /* ViewController.swift */,
+				336F150D1B9D817800375356 /* GetResult.swift */,
 				33B360851B97F6DB00B0167E /* Main.storyboard */,
-				33B360A11B97FBCE00B0167E /* getResults.swift */,
-				33B360A31B980F4600B0167E /* getResult.swift */,
+				33B360A31B980F4600B0167E /* RPSChoice.swift */,
 				33B360881B97F6DB00B0167E /* Images.xcassets */,
 				33B3608A1B97F6DB00B0167E /* LaunchScreen.xib */,
 				33B3607F1B97F6DB00B0167E /* Supporting Files */,
+				33218B621B9D94C300356BD3 /* HistoryViewController.swift */,
 			);
 			path = rockPaperSiccors;
 			sourceTree = "<group>";
@@ -219,9 +225,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				33B360841B97F6DB00B0167E /* ViewController.swift in Sources */,
-				33B360A41B980F4600B0167E /* getResult.swift in Sources */,
+				33B360A41B980F4600B0167E /* RPSChoice.swift in Sources */,
 				33B360821B97F6DB00B0167E /* AppDelegate.swift in Sources */,
-				33B360A21B97FBCE00B0167E /* getResults.swift in Sources */,
+				33218B631B9D94C300356BD3 /* HistoryViewController.swift in Sources */,
+				336F150C1B9D7B6100375356 /* RPSMatch.swift in Sources */,
+				336F150E1B9D817800375356 /* GetResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +425,7 @@
 				33B3609D1B97F6DC00B0167E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		33B3609E1B97F6DC00B0167E /* Build configuration list for PBXNativeTarget "rockPaperSiccorsTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +434,7 @@
 				33B360A01B97F6DC00B0167E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

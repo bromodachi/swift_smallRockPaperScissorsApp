@@ -46,12 +46,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showHistory(sender: AnyObject) {
-        let storyboard = self.storyboard
+        /*let storyboard = self.storyboard
         let controller = self.storyboard?.instantiateViewControllerWithIdentifier("HistoryViewController")as! HistoryViewController
         
         controller.historyMatches = self.history
         
-        self.presentViewController(controller, animated: true, completion: nil)
+        self.presentViewController(controller, animated: true, completion: nil)*/
+  
 
         
     }
