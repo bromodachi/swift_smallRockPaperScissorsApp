@@ -10,10 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var historyButton: UIButton!
     @IBOutlet weak var rock: UIButton!
     @IBOutlet weak var paper: UIButton!
     @IBOutlet weak var scissors: UIButton!
-    var playerChoice: Int?
+    var match: RPSMatch?
+    var history = [RPSMatch]()
+    var matchNum = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,27 +29,58 @@ class ViewController: UIViewController {
     }
     
     @IBAction func results(choice : AnyObject?){
-        if choice?.currentTitle == "rock"{
-            playerChoice = 2
+        let choiceButton = choice as! UIButton
+        switch(choiceButton){
+        case self.rock:
+            self.startGame(RPSChoice.rock)
+        case self.scissors:
+            self.startGame(RPSChoice.scissors)
+        case self.paper:
+            self.startGame(RPSChoice.paper)
+        default:
+            println("shouldnt happen")
         }
-        else if choice?.currentTitle == "scissors"{
-           playerChoice = 3
-        }
-        else if choice?.currentTitle == "paper"{
-            playerChoice = 1
-        }
+
         
-        self.performSegueWithIdentifier("getResult", sender: self)
+      //  self.performSegueWithIdentifier("getResult", sender: self)
     }
     
+    @IBAction func showHistory(sender: AnyObject) {
+        let storyboard = self.storyboard
+        let controller = self.storyboard?.instantiateViewControllerWithIdentifier("HistoryViewController")as! HistoryViewController
+        
+        controller.historyMatches = self.history
+        
+        self.presentViewController(controller, animated: true, completion: nil)
+
+        
+    }
     
-    
+    func startGame (player: RPSChoice){
+        let phoneChoice = RPSChoice()
+        matchNum++
+        
+        let match = RPSMatch(p1 : player, p2 : phoneChoice, matchNum: matchNum)
+        self.match = match
+        history.insert(match, atIndex: 0)
+        self.performSegueWithIdentifier("GetResult", sender: self)
+        
+        
+        
+    }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "getResult"{
-            let controller = segue.destinationViewController as! getResult
-            controller.phoneChoice = randomValue()
-            controller.playerChoice = playerChoice
+        if segue.identifier == "GetResult"{
+            let controller = segue.destinationViewController as! GetResult
+            controller.match = self.match
             
+      //      controller.playerChoice = playerChoice
+            
+            
+        }
+        else if segue.identifier == "historySeg"{
+            let controller = segue.destinationViewController as! HistoryViewController
+            controller.historyMatches = self.history
+            println("right here")
             
         }
     }

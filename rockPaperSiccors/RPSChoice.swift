@@ -3,13 +3,51 @@
 //  rockPaperSiccors
 //
 //  Created by XcodeUser on 9/2/15.
+//  Improved version with match history 9/7/2015
 //  Copyright (c) 2015 XcodeUser. All rights reserved.
 //
 
 import Foundation
-import UIKit
 
-class getResult: UIViewController {
+enum RPSChoice {
+    case rock, paper, scissors
+    
+    init () {
+        switch arc4random() % 3{
+        case 0:
+            self = .rock
+        case 1:
+            self = .paper
+        default:
+            self = .scissors
+        }
+    }
+    
+    func getResult (player: RPSChoice) -> Bool {
+        switch (self, player){
+            //*(winner, loser)
+        case (.paper, .rock), (.scissors, .paper), (.rock, .scissors):
+            return true
+        default:
+            return false
+        }
+    }
+    
+    var description: String {
+        get {
+            switch (self) {
+            case .rock:
+                return "Rock"
+            case .paper:
+                return "Paper"
+            case .scissors:
+                return "Scissors"
+            }
+        }
+    }
+
+}
+/*class getResult: UIViewController {
     var phoneChoice: Int?
     var playerChoice: Int?
     
@@ -88,4 +126,4 @@ class getResult: UIViewController {
     @IBAction func dismiss() {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
-}
+}*/
